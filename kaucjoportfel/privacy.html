@@ -25,7 +25,7 @@
       <p><strong>Data wejścia w życie:</strong> <time datetime="2026-10-30">30 października 2026 r.</time></p>
     </div>
     <h2>Jak działa aplikacja</h2>
-    <p>KaucjoPortfel służy do lokalnego przechowywania kuponów. Nie wymaga utworzenia konta. Obecna wersja aplikacji nie ma uprawnienia do internetu: nie nawiązuje połączeń sieciowych ani nie wysyła danych automatycznie.</p>
+    <p>KaucjoPortfel służy do lokalnego przechowywania kuponów i nie wymaga konta. Ta polityka opisuje wersję 1.1 z reklamami. Starsza wersja 1.0 nie ma uprawnienia do internetu i nie wyświetla reklam. W wersji 1.1 kupony nadal pozostają na urządzeniu, a usługi reklamowe i diagnostyczne mogą korzystać z sieci.</p>
     <h2>Dane na Twoim urządzeniu</h2>
     <ul>
       <li>Dane kuponów, takie jak sklep, kwota, kod i termin ważności, są zapisywane w prywatnej pamięci aplikacji. Wrażliwa treść kuponów jest szyfrowana kluczem chronionym przez Android Keystore.</li>
@@ -42,10 +42,14 @@
       <li><strong>Powiadomienia:</strong> opcjonalne lokalne przypomnienia. Możesz je wyłączyć w ustawieniach Androida.</li>
       <li><strong>Zdjęcia i dokumenty:</strong> dostęp odbywa się przez systemowy selektor po Twoim działaniu.</li>
     </ul>
-    <h2>Reklamy, analityka i udostępnianie danych</h2>
-    <p>Obecna wersja aplikacji nie wyświetla reklam i nie zawiera analityki produktu. Przygotowane miejsce na reklamę nie oznacza, że aplikacja łączy się z usługą reklamową.</p>
-    <p>Google ML Kit zawiera mechanizmy metryk diagnostycznych, ale aplikacja usuwa uprawnienie do internetu, co uniemożliwia wysyłanie tych metryk z tej wersji aplikacji. Deweloper nie otrzymuje danych kuponów przechowywanych na Twoim urządzeniu.</p>
-    <p>Przed udostępnieniem wersji z reklamami ta polityka zostanie zaktualizowana o rzeczywiste działanie użytych usług, przetwarzane dane i dostępne wybory dotyczące prywatności.</p>
+    <h2>Reklamy i wybory dotyczące prywatności</h2>
+    <p>Wersja 1.1 korzysta z Google AdMob (Google Mobile Ads Next-Gen SDK) oraz Google User Messaging Platform (UMP). Przed inicjalizacją usługi reklamowej aplikacja sprawdza, czy UMP zezwala na żądanie reklam, i wyświetla wymagane wiadomości dotyczące prywatności. Gdy wymagane są ustawienia prywatności reklam, znajdziesz je w aplikacji w sekcji „Prywatność i dane”.</p>
+    <p>Google może zbierać i udostępniać adres IP (również do przybliżonego określenia lokalizacji), informacje o uruchomieniach i interakcjach z aplikacją lub reklamą, dane diagnostyczne i wydajności oraz identyfikatory urządzenia i konta, takie jak identyfikator reklamowy Androida i identyfikator zestawu aplikacji, jeśli są dostępne. Cele obejmują wyświetlanie i pomiar reklam, analitykę oraz zapobieganie oszustwom i ochronę usług. Dane SDK są szyfrowane podczas przesyłania przy użyciu TLS.</p>
+    <p>W regionach objętych wymaganiami dotyczącymi zgody możesz zaakceptować, odrzucić lub dostosować wybory w formularzu Google. Odmowa personalizacji nie musi wyłączać wszystkich reklam: zależnie od warunków Google może wyświetlać reklamy ograniczone lub kontekstowe. Identyfikator reklamowy możesz zresetować lub usunąć w ustawieniach Androida. Aplikacja nie wymaga uprawnienia do dokładnej ani przybliżonej lokalizacji.</p>
+    <p>Nie przekazujemy do żądań reklamowych treści kuponów, kodów, kwot, nazw sklepów ani zdjęć. Szczegóły wykorzystania danych i dostępnych mechanizmów ochrony opisują <a href="https://policies.google.com/privacy?hl=pl">polityka prywatności Google</a> oraz <a href="https://policies.google.com/technologies/partner-sites?hl=pl">zasady dotyczące aplikacji korzystających z usług Google</a>. Google określa zasady przechowywania i usuwania przetwarzanych przez siebie danych; deweloper nie ma dostępu do indywidualnych profili reklamowych użytkowników.</p>
+    <h2>Skanowanie i diagnostyka ML Kit</h2>
+    <p>Skanowanie kodu i tekstu odbywa się na urządzeniu przy użyciu modeli Google ML Kit dołączonych do aplikacji. Po udostępnieniu sieci w wersji 1.1 ML Kit może przesyłać do Google dane o urządzeniu i wersji aplikacji, identyfikatory instalacji, informacje o konfiguracji, wydajności, zdarzeniach i błędach. Automatyczne przybliżanie skanera może obejmować identyfikator sesji, zmiany powiększenia oraz współrzędne obszaru prawdopodobnie zawierającego kod. Służy to diagnostyce i analizie użycia SDK; według dokumentacji Google te dane są przesyłane przez HTTPS i nie są udostępniane innym firmom.</p>
+    <p>Treść obrazów i odczytane kupony pozostają przetwarzane lokalnie. Nie dodaliśmy osobnej usługi analityki produktu ani kont użytkowników. Więcej informacji: <a href="https://developers.google.com/ml-kit/android-data-disclosure">opis danych diagnostycznych ML Kit</a>.</p>
     <h2>Przechowywanie i usuwanie</h2>
     <p>Kupony i ich zdjęcia pozostają na urządzeniu do ich usunięcia. Usunięcie kuponu usuwa także należący do niego obraz i wycinek kodu. Odinstalowanie aplikacji usuwa jej prywatne dane z urządzenia.</p>
     <p>Wyeksportowane kopie zapasowe pozostają w wybranym przez Ciebie miejscu. Aby je usunąć, skorzystaj z używanego menedżera plików lub dostawcy chmury.</p>
