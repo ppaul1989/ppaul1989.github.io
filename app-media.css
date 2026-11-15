@@ -1,0 +1,20 @@
+@media (min-width: 1000px) {
+  .app-screens .screen-gallery-grid:has(figure:nth-child(4)) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (701px <= width < 1000px) {
+  .app-screens .screen-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.app-preview {
+  width: min(100%, 880px);
+}
+.app-preview video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #10171f;
+}
